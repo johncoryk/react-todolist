@@ -3,16 +3,7 @@ import Todo from './Todo';
 import CreateTodo from './CreateTodo';
 
 function List() {
-  const [todos, setTodos] = useState([
-    {
-      title: 'Something crazy',
-      isCompleted: false
-    },
-    {
-      title: 'Something two',
-      isCompleted: true
-    }
-  ]);
+  const [todos, setTodos] = useState([]);
 
   const addTodo = title => {
     const newTodos = [...todos, { title, isCompleted: false }];
